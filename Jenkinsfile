@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'murenzi123/my-web-app'
+        DOCKER_IMAGE = 'murenzi123/my-web'
         DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
         CONTAINER_NAME = 'my-web-app'
     }
