@@ -40,10 +40,11 @@ pipeline {
                                 docker push ${DOCKER_IMAGE}:latest
                             """
                         } else {
-                            bat """
-                                echo %DOCKER_PASS% | docker login -u %DOCKER_USER% --password-stdin
-                                docker push %DOCKER_IMAGE%
-                            """
+                           bat """
+powershell -Command "Write-Host '%DOCKER_PASS%' | docker login -u '%DOCKER_USER%' --password-stdin"
+docker push %DOCKER_IMAGE%
+"""
+
                         }
                     }
                 }
