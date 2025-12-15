@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'murenzi123/my-web'
         DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
-        CONTAINER_NAME = 'my-web-app'
+        CONTAINER_NAME = 'my-web'
     }
 
     stages {
