@@ -13,7 +13,7 @@ app.get("/about", (req, res) => {
   res
     .status(200)
     .type("text")
-    .send("About Page\nMy name is Shumbusho Irumva\n");
+    .send("About Page\nMy name is murenzi james\n");
 });
 
 app.get("/health", (req, res) => {
